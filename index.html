@@ -329,6 +329,46 @@
       <section class="styleguide-section">
         <div>
           <p class="eyebrow">Layouts</p>
+          <h2>Site Header and Footer</h2>
+          <p class="section-copy">Webpages only, not webapps or iOS apps. Every browsable project page under danielpradilla.info uses the same two-row header and one-row footer. Row 1 is the small site bar: the uppercase "Daniel Pradilla" wordmark on the left, intra-project tabs and then Blog/GitHub on the right, collapsing to a hamburger menu below 600px. The site bar holds a fixed height at both widths so the project title in row 2 never jumps. Row 2 is the project's own compact title, no lede paragraph. Resize the window to see the row 1 nav collapse. See <a class="text-link small-link" href="GUIDE.md#header-and-footer-navigation">GUIDE.md</a> for the full spec.</p>
+        </div>
+        <div class="dp-nav-demo">
+          <header class="dp-navbar">
+            <a class="dp-navbar-brand" href="/projects/">Daniel Pradilla</a>
+            <nav class="dp-navbar-links" aria-label="Site navigation">
+              <a href="#">Explore</a>
+              <a href="#">Methodology</a>
+              <a href="/blog/">Blog</a>
+              <a href="https://github.com/danielpradilla" rel="me">GitHub</a>
+            </nav>
+            <details class="dp-navbar-menu">
+              <summary aria-label="Menu">&#9776;</summary>
+              <nav aria-label="Site navigation (mobile)">
+                <a href="#">Explore</a>
+                <a href="#">Methodology</a>
+                <a href="/blog/">Blog</a>
+                <a href="https://github.com/danielpradilla" rel="me">GitHub</a>
+              </nav>
+            </details>
+          </header>
+          <div class="dp-project-header">
+            <h1>Project Title</h1>
+            <p>One-line tagline, not a paragraph.</p>
+          </div>
+          <footer class="dp-footer">
+            <span>&copy; 2026 Daniel Pradilla</span>
+            <nav aria-label="Footer navigation">
+              <a href="/projects/">Projects</a>
+              <a href="/blog/">Blog</a>
+              <a href="https://github.com/danielpradilla" rel="me">GitHub</a>
+            </nav>
+          </footer>
+        </div>
+      </section>
+
+      <section class="styleguide-section">
+        <div>
+          <p class="eyebrow">Layouts</p>
           <h2>Navigation and Workspaces</h2>
           <p class="section-copy">Use full-width bands or unframed grids for page structure. Cards are examples, rows, or tools rather than page wrappers.</p>
         </div>
